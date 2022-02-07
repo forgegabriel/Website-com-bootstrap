@@ -1,11 +1,289 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
+    <meta name="author" content="forgegabriel">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página normal</title>
+    <title>Projeto Origem</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </head>
-<body>
-    
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+    <div class="bg-primary">
+        <h1 id="topo" class="container-md mb-0 p-5 text-white">Esse é o início do meu auto estudo em bootstrap.</h1>
+    </div>
+    <nav class="sticky-top navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-md">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#topo">Topo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#link">Link</a>
+                </li>
+            </ul>
+            <div class="dropdown">
+                <a class="dropdown-toggle text-decoration-none text-light" href="#" role="button"
+                    data-bs-toggle="dropdown">Mais</a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="#formula">Fórmula</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><h5 class="dropdown-header">Outros</h5></li>
+                    <li><a class="dropdown-item" href="#lista">Lista</a></li>
+                    <li><a href="" class="dropdown-item disabled">Disabled</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-md p-0">
+        <p class="mt-3">E que comecem os testes...</p>
+        <div>
+            <h1>Cabeçalho h1 <small>(heading)</small></h1>
+            <h2>Cabeçalho h2 <small>(heading)</small></h2>
+            <h3>Cabeçalho h3 <small>(heading)</small></h3>
+            <h4>Cabeçalho h4 <small>(heading)</small></h4>
+            <h5>Cabeçalho h5 <small>(heading)</small></h5>
+            <h6>Cabeçalho h6 <small>(heading)</small></h6>
+        </div>
+        <div>
+            <h1 class="display-1">Display 1 <small>(heading)</small></h1>
+            <h2 class="display-2">Display 2 <small>(heading)</small></h2>
+            <h3 class="display-3">Display 3 <small>(heading)</small></h3>
+            <h4 class="display-4">Display 4 <small>(heading)</small></h4>
+            <h5 class="display-5">Display 5 <small>(heading)</small></h5>
+            <h6 class="display-6">Display 6 <small>(heading)</small></h6>
+        </div>
+        <div id="link" class="d-grid">
+            <a class="mt-3 btn btn-lg btn-outline-dark"
+                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank">
+                Link aleartótio só pra testar mesmo</a>
+        </div>
+        <div class="row my-5">
+            <h2 class="text-danger">Que tal um
+                Typhlosion estiloso ouvindo música...</h2>
+            <div class="col">
+                <img class="img-fluid" src="imagens/new typhlosion.png" alt="Typhlosion estiloso ouvindo música"
+                    width="300px">
+            </div>
+            <div class="col">
+                <pre>
+                    My Bonnie lies over the ocean.
+            
+                    My Bonnie lies over the sea.
+            
+                    My Bonnie lies over the ocean.
+            
+                    Oh, bring back my Bonnie to me.
+                </pre>
+            </div>
+        </div>
+        <div class="my-5 p-5 bg-primary rounded">
+            <h3 class="text-center text-white display-6">E que venha as divs e seu estilos</h3>
+        </div>
+        <h3 id="formula">Já chegou hora de estudar <em>fórmulas</em>?</h3>
+        <p style="margin-bottom: 0; width: 10em; border-bottom: 2px solid black;">
+            <em>- b &plusmn; &radic;( b <sup>2</sup> - 4 . a . c)</em>
+        </p>
+        <p style="margin-top: 0; width: 9em; text-align: center;"><i>2 . a</i></p>
+        <p><mark>E um pouco de H<sub>2</sub>O.</mark></p>
+        <p>Um <del>errinho</del> acerto aqui.</p>
+        <p>Um <small>pequeno</small> e um <ins>sublinhado</ins>.</p>
+        <p><b>Esse é o negrito (bold).</b></p>
+        <p><strong>Esse é o importante (strong).</strong></p>
+        <div class="text-center">
+            <h4 class="m-0">Citação:</h4>
+            <q>Eu vi na <code>wikipédia</code> que tomar <code>leite</code> com manga mata.</q>
+        </div>
+        <p class="lead">Não aperte <kbd>Alt + F4</kbd></p>
+        <h4>Blockquote:</h4>
+        <blockquote class="blockquote" cite="https://pt.wikipedia.org/wiki/Discoth%C3%A8que_(can%C3%A7%C3%A3o)">
+            <p>
+                "Discothèque" é uma
+                canção gravada pela banda irlandesa U2 para seu nono álbum de estúdio, Pop(1997).
+            </p>
+            <footer class="blockquote-footer">Alguma pagina da wikipedia</footer>
+        </blockquote>
+        <p>Abreviação: <abbr title="Seu Pai Fabrica Cueca">SPFC</abbr></p>
+        <h4>Endereço:</h4>
+        <address>
+            Euston Rd, London N1 9AL<br>
+            United Kingdom<br>
+            King's Cross Station, platform 9 ¾
+        </address>
+        <p class="alert alert-success alert-dismissible fade show">
+            <strong>Muito pelo contrário:</strong> <bdo dir="rtl">Você é legal!</bdo>
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </p>
+        <h4 id="lista">Lista com descrição</h4>
+        <dl>
+            <dt>Café</dt>
+            <dd>- bebida energizante</dd>
+            <dt>Leite</dt>
+            <dd>- bebida feita por vacas</dd>
+        </dl>
+        <div>
+            <h4 class="d-inline-block me-3">Bagdes: </h4>
+            <button type="button" class="btn btn-primary mb-3">
+                Messages <span class="badge bg-danger">4</span>
+            </button>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <table class="table table-striped table-sm">
+                    <thead>
+                        <tr class="table-light">
+                            <th colspan="2" style="background-color: #FF8B8B;">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>S-Força</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>P-Percepção</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>E-Resitência</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>C-Carisma</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>I-Inteligência</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>A-Agilidade</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>L-Sorte</td>
+                            <td>3</td>
+                        </tr>
+                        <tr class="table-dark">
+                            <td>Total</td>
+                            <td>42</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-3">
+                <table class="table table-striped table-sm">
+                    <thead>
+                        <tr class="table-light">
+                            <th colspan="2" style="background-color: #A0FFFF;">Características</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sequencia</td>
+                            <td>16</td>
+                        </tr>
+                        <tr>
+                            <td>Pontos de Ação</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>Taxa de Habilidade</td>
+                            <td>21</td>
+                        </tr>
+                        <tr>
+                            <td>Dano Corpo a Corpo</td>
+                            <td>35</td>
+                        </tr>
+                        <tr>
+                            <td>Resistência a Rad</td>
+                            <td>24</td>
+                        </tr>
+                        <tr>
+                            <td>Limite de Carga</td>
+                            <td>150</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="progress rounded-0">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:52%">Progresso</div>
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width:14%">Vitórias</div>
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width:21%">Derrotas</div>
+    </div>
+    <div class="container-md p-0">
+        <div class="d-flex align-items-center gap-2 my-3">
+            <div class="spinner-border text-muted"></div>
+            <div class="spinner-grow text-primary"></div>
+            <div class="spinner-grow spinner-grow-sm text-warning"></div>
+            <div class="spinner-border spinner-border-sm text-success"></div>
+            <div class="spinner-border text-info"></div>
+            <div class="spinner-border text-danger"></div>
+            <div class="spinner-border text-secondary"></div>
+            <div class="spinner-border text-dark"></div>
+            <button class="btn btn-primary">
+                <div class="spinner-border spinner-border-sm text-light"></div>
+            </button>
+        </div>
+        <div class="mb-3">
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Inbox
+                    <span class="badge bg-primary rounded-pill">12</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Ads
+                    <span class="badge bg-primary rounded-pill">50</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Junk
+                    <span class="badge bg-primary rounded-pill">99</span>
+                </li>
+            </ul>
+        </div>
+        <div class="card mb-3" style="max-width:500px">
+            <img src="https://st.depositphotos.com/2101611/3925/v/600/depositphotos_39258143-stock-illustration-businessman-avatar-profile-picture.jpg"
+                alt="Perfil" class="card-img-top">
+            <div class="card-body">
+                <h4 class="card-title">Forge Gabriel</h4>
+                <p class="card-text">Estudando programação</p>
+                <a href="https://github.com/forgegabriel" target="_blank"
+                    class="card-link btn btn-primary text-light text-decoration-none">
+                    Meu github</a>
+            </div>
+        </div>
+        <div>
+            <button class="btn btn-primary mb-1" data-bs-toggle="collapse" data-bs-target="#p-oculto">Aperte</button>
+            <div id="p-oculto" class="collapse">
+                <p>Eu posso me esconder ou aparecer com um click"</p>
+            </div>
+        </div>
+        <button class="btn btn-primary" title="Popover" data-bs-toggle="popover" data-bs-placement="bottom"
+            data-bs-trigger="focus" data-bs-content="Click em qualquer lugar para fechar o documento">Aperte
+        </button>
+    </div>
+    <div>
+        <ul class="pagination pagination-lg justify-content-center">
+            <li class="page-item disabled"><a class="page-link" href="">1</a></li>
+            <li class="page-item"><a class="page-link" href="">2</a></li>
+            <li class="page-item active"><a class="page-link" href="">3</a></li>
+            <li class="page-item"><a class="page-link" href="">4</a></li>
+        </ul>
+    </div>
+    <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+        })
+    </script>
 </body>
+
 </html>
