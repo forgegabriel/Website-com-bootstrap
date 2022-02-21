@@ -15,7 +15,7 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
-    <div class="bg-primary">
+    <div class="cover-i">
         <h1 id="topo" class="container-md mb-0 p-5 text-white">Esse é o início do meu auto estudo em bootstrap.</h1>
     </div>
 
@@ -41,7 +41,7 @@
         </nav>
     </div>
 
-    <nav class="sticky-top navbar navbar-expand bg-dark navbar-dark">
+    <nav class="sticky-top navbar navbar-expand navbar-dark barra-i">
         <div class="container-md">
             <ul class="navbar-nav">
                 <li class="nav-item">
@@ -52,11 +52,14 @@
                 <li class="nav-item">
                     <a class="nav-link" href="form.html">Form</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dio.html">Aula Dio</a>
+                </li>
             </ul>
         </div>
     </nav>
 
-    <div class="container-md p-0">
+    <div class="container-md">
         <p class="mt-3">E que comecem os testes...</p>
         <div>
             <h1>Cabeçalho h1 <small>(heading)</small></h1>
@@ -75,30 +78,32 @@
             <h6 class="display-6">Display 6 <small>(heading)</small></h6>
         </div>
         <div id="link" class="d-grid">
-            <a class="mt-3 shadow btn btn-lg btn-outline-dark"
+            <a class="mt-3 shadow btn btn-white-i btn-lg btn-outline-dark"
                 href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank">
                 Link aleartótio só pra testar mesmo</a>
         </div>
-        <div class="row my-5">
-            <h2 class="text-danger">Que tal um
-                Typhlosion estiloso ouvindo música...</h2>
-            <div class="col">
-                <img class="img-fluid" src="imagens/new typhlosion.png" alt="Typhlosion estiloso ouvindo música"
-                    width="300px">
-            </div>
-            <div class="col">
-                <pre>
-                    My Bonnie lies over the ocean.
-            
-                    My Bonnie lies over the sea.
-            
-                    My Bonnie lies over the ocean.
-            
-                    Oh, bring back my Bonnie to me.
-                </pre>
+        <div class="container">
+            <div class="row my-5">
+                <h2 class="text-barra-i mb-3">Que tal um
+                    Typhlosion estiloso ouvindo música...</h2>
+                <div class="col-md-3 mb-3 d-flex justify-content-center align-items-center">
+                    <img class="img-fluid" src="imagens/new typhlosion.png" alt="Typhlosion estiloso ouvindo música"
+                        width="300px">
+                </div>
+                <div class="col-md-3 d-flex justify-content-center align-items-center">
+                    <pre class="m-0">
+    My Bonnie lies over the ocean.
+    
+    My Bonnie lies over the sea.
+    
+    My Bonnie lies over the ocean.
+    
+    Oh, bring back my Bonnie to me.
+                    </pre>
+                </div>
             </div>
         </div>
-        <div class="my-5 p-5 bg-primary rounded">
+        <div class="my-5 p-5 cover-i rounded">
             <h3 class="text-center text-white display-6">E que venha as divs e seu estilos</h3>
         </div>
         <h3 id="formula">Já chegou hora de estudar <em>fórmulas</em>?</h3>
@@ -144,88 +149,90 @@
         </dl>
         <div>
             <h4 class="d-inline-block me-3">Bagdes: </h4>
-            <button type="button" class="btn btn-primary mb-3">
+            <button type="button" class="btn btn-grey-i border-dark mb-3">
                 Messages <span class="badge bg-danger">4</span>
             </button>
         </div>
-        <div class="row">
-            <div class="col-3">
-                <table class="table table-striped table-sm">
-                    <thead>
-                        <tr class="table-light">
-                            <th colspan="2" style="background-color: #FF8B8B;">Status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>S-Força</td>
-                            <td>5</td>
-                        </tr>
-                        <tr>
-                            <td>P-Percepção</td>
-                            <td>8</td>
-                        </tr>
-                        <tr>
-                            <td>E-Resitência</td>
-                            <td>6</td>
-                        </tr>
-                        <tr>
-                            <td>C-Carisma</td>
-                            <td>5</td>
-                        </tr>
-                        <tr>
-                            <td>I-Inteligência</td>
-                            <td>9</td>
-                        </tr>
-                        <tr>
-                            <td>A-Agilidade</td>
-                            <td>6</td>
-                        </tr>
-                        <tr>
-                            <td>L-Sorte</td>
-                            <td>3</td>
-                        </tr>
-                        <tr class="table-dark">
-                            <td>Total</td>
-                            <td>42</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="col-3">
-                <table class="table table-striped table-sm">
-                    <thead>
-                        <tr class="table-light">
-                            <th colspan="2" style="background-color: #A0FFFF;">Características</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Sequencia</td>
-                            <td>16</td>
-                        </tr>
-                        <tr>
-                            <td>Pontos de Ação</td>
-                            <td>12</td>
-                        </tr>
-                        <tr>
-                            <td>Taxa de Habilidade</td>
-                            <td>21</td>
-                        </tr>
-                        <tr>
-                            <td>Dano Corpo a Corpo</td>
-                            <td>35</td>
-                        </tr>
-                        <tr>
-                            <td>Resistência a Rad</td>
-                            <td>24</td>
-                        </tr>
-                        <tr>
-                            <td>Limite de Carga</td>
-                            <td>150</td>
-                        </tr>
-                    </tbody>
-                </table>
+        <div class="container">
+            <div class="m-0 row">
+                <div class="col-md-3">
+                    <table class="table table-striped table-sm">
+                        <thead>
+                            <tr class="table-light">
+                                <th colspan="2" style="background-color: #FF8B8B;">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>S-Força</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>P-Percepção</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>E-Resitência</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>C-Carisma</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>I-Inteligência</td>
+                                <td>9</td>
+                            </tr>
+                            <tr>
+                                <td>A-Agilidade</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>L-Sorte</td>
+                                <td>3</td>
+                            </tr>
+                            <tr class="table-dark">
+                                <td>Total</td>
+                                <td>42</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-3">
+                    <table class="table table-striped table-sm">
+                        <thead>
+                            <tr class="table-light">
+                                <th colspan="2" style="background-color: #A0FFFF;">Características</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Sequencia</td>
+                                <td>16</td>
+                            </tr>
+                            <tr>
+                                <td>Pontos de Ação</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>Taxa de Habilidade</td>
+                                <td>21</td>
+                            </tr>
+                            <tr>
+                                <td>Dano Corpo a Corpo</td>
+                                <td>35</td>
+                            </tr>
+                            <tr>
+                                <td>Resistência a Rad</td>
+                                <td>24</td>
+                            </tr>
+                            <tr>
+                                <td>Limite de Carga</td>
+                                <td>150</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
@@ -234,7 +241,7 @@
         <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width:14%">Vitórias</div>
         <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width:21%">Derrotas</div>
     </div>
-    <div class="container-md p-0">
+    <div class="container-md">
         <div class="d-flex align-items-center gap-2 my-3">
             <div class="spinner-border text-muted"></div>
             <div class="spinner-grow text-primary"></div>
@@ -252,15 +259,15 @@
             <ul class="list-group">
                 <li class="list-group-item d-flex justify-content-between align-items-center">
                     Inbox
-                    <span class="badge bg-primary rounded-pill">12</span>
+                    <span class="badge middle-i rounded-pill">12</span>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center">
                     Ads
-                    <span class="badge bg-primary rounded-pill">50</span>
+                    <span class="badge middle-i rounded-pill">50</span>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center">
                     Junk
-                    <span class="badge bg-primary rounded-pill">99</span>
+                    <span class="badge middle-i rounded-pill">99</span>
                 </li>
             </ul>
         </div>
@@ -271,17 +278,17 @@
                 <h4 class="card-title">Forge Gabriel</h4>
                 <p class="card-text">Estudando programação</p>
                 <a href="https://github.com/forgegabriel" target="_blank"
-                    class="card-link btn btn-primary text-light text-decoration-none">
+                    class="card-link btn btn-middle-i text-light text-decoration-none">
                     Meu github</a>
             </div>
         </div>
         <div>
-            <button class="btn btn-primary mb-1" data-bs-toggle="collapse" data-bs-target="#p-oculto">Aperte</button>
+            <button class="btn btn-middle-i mb-1" data-bs-toggle="collapse" data-bs-target="#p-oculto">Aperte</button>
             <div id="p-oculto" class="collapse">
                 <p>Eu posso me esconder ou aparecer com um click"</p>
             </div>
         </div>
-        <button class="btn btn-primary" title="Popover" data-bs-toggle="popover" data-bs-placement="bottom"
+        <button class="btn btn-middle-i" title="Popover" data-bs-toggle="popover" data-bs-placement="bottom"
             data-bs-trigger="focus" data-bs-content="Click em qualquer lugar para fechar o documento">Aperte
         </button>
     </div>

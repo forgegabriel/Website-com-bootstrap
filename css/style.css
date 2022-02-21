@@ -1,6 +1,55 @@
 :target::before {
-    content: "";
-    display: block;
-    height: 60px;
-    margin: -60px 0 0;
-  }
+  content: "";
+  display: block;
+  height: 60px;
+  margin: -60px 0 0;
+}
+
+.logo {
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.cover-i {
+  background-color: #52b788;
+}
+
+.middle-i {
+  background-color: #2d6a4f;
+}
+
+.barra-i {
+  background-color: #15241F;
+}
+
+.text-barra-i {
+  color: #081c15;
+}
+
+.btn-grey-i:hover {
+  background-color: lightgrey;
+}
+
+.btn-middle-i {
+  background-color: #2d6a4f;
+  color: white;
+}
+
+.btn-middle-i:hover, .btn-white-i:hover {
+  background-color: #15241F;
+  color:white
+}
+
+.page-link {
+  color: #2d6a4f;
+}
+
+.page-link:hover {
+  color: #2d6a4f;
+} 
+
+.page-item.active>.page-link {
+  background-color: #2d6a4f;
+  color: white;
+  border-color: #2d6a4f;
+}
