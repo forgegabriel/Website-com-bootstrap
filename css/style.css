@@ -1,13 +1,12 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 :target::before {
   content: "";
   display: block;
   height: 60px;
   margin: -60px 0 0;
-}
-
-.logo {
-  margin-left: 70px;
-  margin-right: 70px;
 }
 
 .cover-i {
@@ -52,4 +51,25 @@
   background-color: #2d6a4f;
   color: white;
   border-color: #2d6a4f;
+}
+
+.logo {
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.quem-somos {
+  background-color: rgb(213, 255, 241);
+}
+
+.parceiros {
+  background-color: rgb(183, 255, 231);
+}
+
+.servicos {
+  background-color: rgb(213, 255, 241);
+}
+
+.footer-i {
+  background-color: rgb(31, 31, 31);
 }
